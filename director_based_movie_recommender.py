@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import requests
 import pandas as pd
 import re
@@ -47,21 +41,6 @@ def recommend_movie(movie_name):
 
 
   print(df.sort_values("point",ascending=False).drop_duplicates().head(7))
-
-
-# In[3]:
-
-
-recommend_movie("dunkirk")
-
-
-# In[5]:
-
-
-recommend_movie("red istanbul")
-
-
-# In[ ]:
 
 
 
